@@ -70,6 +70,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "thumbs.dreamstime.com",
       },
+      {
+        protocol: "https",
+        hostname: "ds.rokomari.store",
+      },
     ],
   },
 };

@@ -8,6 +8,24 @@ import Footer6 from "@/components/App/Footers/Footer6";
 import Footer7 from "@/components/App/Footers/Footer7";
 import Footer8 from "@/components/App/Footers/Footer8";
 import Footer9 from "@/components/App/Footers/Footer9";
+export const metadata = {
+  title: "Footer | Soft UI",
+  description:
+    "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+  keywords:
+    "Soft UI, React UI Components, Tailwind CSS, Customizable UI Library, Modern UI, Reusable Components, Next.js UI Library",
+  author: "Md Akash Ali",
+  openGraph: {
+    type: "website",
+    url: "https://softui-react.vercel.app",
+    title:
+      "Soft UI React Components | Modern, Reusable, and Customizable UI Library",
+    description:
+      "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+
+    site_name: "Soft UI",
+  },
+};
 
 const Footer = () => {
   return (

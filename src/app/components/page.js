@@ -1,4 +1,4 @@
-const Page = () => {
+const ComponentsPage = () => {
   return (
     <>
       <div className=" relative ">
@@ -27,4 +27,4 @@ const Page = () => {
     </>
   );
 };
-export default Page;
+export default ComponentsPage;

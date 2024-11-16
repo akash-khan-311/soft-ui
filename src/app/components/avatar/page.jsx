@@ -6,6 +6,24 @@ import Avatars2 from "@/components/App/Avatars/Avatars2";
 import Avatars3 from "@/components/App/Avatars/Avatars3";
 
 import Avatars1 from "@/components/App/Avatars/Avatars1";
+export const metadata = {
+  title: "Avatar | Soft UI",
+  description:
+    "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+  keywords:
+    "Soft UI, React UI Components, Tailwind CSS, Customizable UI Library, Modern UI, Reusable Components, Next.js UI Library",
+  author: "Md Akash Ali",
+  openGraph: {
+    type: "website",
+    url: "https://softui-react.vercel.app",
+    title:
+      "Soft UI React Components | Modern, Reusable, and Customizable UI Library",
+    description:
+      "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+
+    site_name: "Soft UI",
+  },
+};
 
 const Avatar = () => {
   return (
