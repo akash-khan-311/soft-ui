@@ -7,6 +7,7 @@ import { MdClose, MdMenuBook } from "react-icons/md";
 import { RiSettings4Fill } from "react-icons/ri";
 import ActiveLink from "../Shared/ActiveLink";
 import Link from "next/link";
+import Hamburger from "hamburger-react";
 const componentsItems = [
   "Accordion",
   "Alert",
@@ -42,9 +43,9 @@ const componentsItems = [
 const Sidebar = () => {
   const [docOpen, setDocOpen] = useState(false);
   const [componentOpen, setComponentOpen] = useState(true);
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const handleToggle = () => {
-    setIsActive(!isActive);
+    setIsActive((prevState) => !prevState);
   };
 
   const handleComponentNavOpen = () => {
@@ -61,20 +62,23 @@ const Sidebar = () => {
   return (
     <>
       <div className="menu z-20">
-        <button
+        {/* <button
           onClick={handleToggle}
-          className="mobile-menu-button p-4 focus:outline-none  text-orange-600 fixed top-0  xl:hidden right-1"
+          className="mobile-menu-button z-50  p-4 focus:outline-none  text-orange-600 fixed top-0  xl:hidden right-1"
         >
           {isActive ? (
             <GiHamburgerMenu className="text-3xl" />
           ) : (
             <MdClose className="text-3xl" />
           )}
-        </button>
+        </button> */}
+        <div className=" mobile-menu-button z-50  p-4 focus:outline-none  text-orange-600 fixed top-0  xl:hidden right-1">
+          <Hamburger toggled={isActive} toggle={handleToggle} />
+        </div>
       </div>
       <div
         className={` components-sidebar backdrop-blur-xl bg-white/10 fixed top-[0px] z-[20] ${
-          isActive && "-translate-x-full"
+          !isActive && "-translate-x-full"
         }  xl:translate-x-0 xl:w-[240px]  select-none px-2 block transition-all overflow-scroll`}
       >
         <div className="flex h-full w-full flex-col space-y-1">
