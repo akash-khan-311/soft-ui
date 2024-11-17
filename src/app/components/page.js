@@ -14,6 +14,16 @@ const ComponentsPage = () => {
               components designed to elevate your projects. Redefine UI design
               with Soft UI, one component at a time.
             </p>
+            <div className="bg-gray-900 text-white p-4 max-w-[24rem] mx-auto rounded-xl mt-10">
+              <p
+                style={{
+                  fontFamily: "'Fira Code', 'Source Code Pro', monospace",
+                }}
+                className="text-center"
+              >
+                npm install react-icons --save
+              </p>
+            </div>
           </div>
         </div>
       </div>
