@@ -98,7 +98,7 @@ const SpeedDial = ()=> {
                 <div className="space-y-4 duration-500 h-0 group-hover:my-4 group-hover:h-full ">
                     {/* Icon Map */}
                     {svgs?.map((svg, idx) => (
-                        <div key={idx} className={\`w-10 h-10 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-md opacity-0 group-hover:opacity-100 \${idx === 0 ? 'delay-[400ms] group-hover:delay-100' : idx === 1 ? 'delay-300 group-hover:delay-200' : idx === 2 ? 'delay-200 group-hover:delay-300' : idx === 3 ? 'delay-100 group-hover:delay-[400ms]' : 'delay-[400ms] group-hover:delay-100'}\`}>
+                        <div key={idx} className={\`w-10 h-10 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-md opacity-0 group-hover:opacity-100 \${idx === 0 ? 'delay-[400ms] group-hover:delay-100' : idx === 1 ? 'delay-300 group-hover:delay-200' : idx === 2 ? 'delay-200 group-hover:delay-300' : idx === 3 ? 'delay-100 group-hover:delay-400' : 'delay-[400ms] group-hover:delay-100'}\`}>
                             <div className="w-full h-full bg-white hover:bg-gray-200 flex justify-center items-center rounded-full duration-300">
                                 {svg?.svg}
                             </div>
@@ -146,7 +146,7 @@ export default SpeedDial;
                     : idx === 2
                     ? "delay-200 group-hover:delay-300"
                     : idx === 3
-                    ? "delay-100 group-hover:delay-[400ms]"
+                    ? "delay-100 group-hover:delay-400"
                     : "delay-[400ms] group-hover:delay-100"
                 }`}
               >

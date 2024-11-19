@@ -28,7 +28,7 @@ const Card14 = () => {
             </p>
             <a
               href="#!"
-              className="action w-full bg-white text-center text-sm leading-5 text-black transition-all duration-[0.2s] ease-[ease] mt-8 px-6 py-2.5 rounded-full border-2 border-solid border-white hover:text-white hover:bg-transparent"
+              className="action w-full bg-white text-center text-sm leading-5 text-black transition-all duration-[0.2s] ease-&lsqb;ease&rsqb; mt-8 px-6 py-2.5 rounded-full border-2 border-solid border-white hover:text-white hover:bg-transparent"
             >
               Get started
             </a>
@@ -75,7 +75,7 @@ export default Card
             </p>
             <a
               href="#!"
-              className="action w-full bg-white text-center text-sm leading-5 text-black transition-all duration-[0.2s] ease-[ease] mt-8 px-6 py-2.5 rounded-full border-2 border-solid border-white hover:text-white hover:bg-transparent"
+              className="action w-full bg-white text-center text-sm leading-5 text-black transition-all duration-[0.2s] ease-&lsqb;ease&rsqb; mt-8 px-6 py-2.5 rounded-full border-2 border-solid border-white hover:text-white hover:bg-transparent"
             >
               Get started
             </a>
