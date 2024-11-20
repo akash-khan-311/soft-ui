@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
+import TawkToWidget from "@/components/Shared/TawkToWidget";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         {children}
+        <TawkToWidget />
       </body>
     </html>
   );
