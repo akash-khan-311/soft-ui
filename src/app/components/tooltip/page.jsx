@@ -1,4 +1,5 @@
 import Tooltip1 from "@/components/App/Tooltip/Tooltip1";
+import Tooltip2 from "@/components/App/Tooltip/Tooltip2";
 export const metadata = {
   title: "Tooltip | Soft UI",
   description:
@@ -22,6 +23,7 @@ const ToolTip = () => {
   return (
     <>
       <Tooltip1 />
+      <Tooltip2 />
     </>
   );
 };
