@@ -33,7 +33,7 @@ const Input1 = () => {
   </svg>
 </label>
 <div className="border h-2/5 w-[1.3px] bg-[rgb(223,223,223)]" />
-<button className="micButton bg-transparent h-10 cursor-pointer duration-[0.3s] pl-3 pr-[15px] py-0 border-[none] hover:bg-[rgb(255,230,230)] hover:duration-[200]">
+<button className="micButton bg-transparent h-10 cursor-pointer duration-[0.3s] pl-3 pr-[15px] py-0 border-[none] hover:bg-[rgb(255,230,230)] hover:duration-200">
   <svg viewBox="0 0 384 512" className=" w-3">
     <path
       className="fill-[rgb(255,81,0)]"
@@ -76,7 +76,7 @@ const Input1 = () => {
               </svg>
             </label>
             <div className="border h-2/5 w-[1.3px] bg-[rgb(223,223,223)]" />
-            <button className="micButton bg-transparent h-10 cursor-pointer duration-[0.3s] pl-3 pr-[15px] py-0 border-[none] hover:bg-[rgb(255,230,230)] hover:duration-[200]">
+            <button className="micButton bg-transparent h-10 cursor-pointer duration-[0.3s] pl-3 pr-[15px] py-0 border-[none] hover:bg-[rgb(255,230,230)] hover:duration-200">
               <svg viewBox="0 0 384 512" className=" w-3">
                 <path
                   className="fill-[rgb(255,81,0)]"

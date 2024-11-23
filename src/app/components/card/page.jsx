@@ -14,6 +14,24 @@ import Card6 from "@/components/App/Cards/Card6";
 import Card7 from "@/components/App/Cards/Card7";
 import Card8 from "@/components/App/Cards/Card8";
 import Card9 from "@/components/App/Cards/Card9";
+export const metadata = {
+  title: "Card | Soft UI",
+  description:
+    "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+  keywords:
+    "Soft UI, React UI Components, Tailwind CSS, Customizable UI Library, Modern UI, Reusable Components, Next.js UI Library",
+  author: "Md Akash Ali",
+  openGraph: {
+    type: "website",
+    url: "https://softui-react.vercel.app",
+    title:
+      "Soft UI React Components | Modern, Reusable, and Customizable UI Library",
+    description:
+      "Soft UI React Components is a modern, reusable, and customizable library for React and Next.js. Build elegant and responsive web applications with ease using our comprehensive collection of UI components.",
+
+    site_name: "Soft UI",
+  },
+};
 
 const Card = () => {
   return (
