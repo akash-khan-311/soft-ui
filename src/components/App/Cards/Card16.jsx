@@ -1,4 +1,5 @@
 import CodeBox from "@/components/Shared/Codebox/CodeBox";
+import Image from "next/image";
 
 const Card16 = () => {
   return (
@@ -128,7 +129,9 @@ const Card16 = () => {
              flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg"
             >
               <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt="ui/ux review check"
                 />
