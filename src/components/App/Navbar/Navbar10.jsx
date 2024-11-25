@@ -1,100 +1,137 @@
 "use client";
 import CodeBox from "@/components/Shared/Codebox/CodeBox";
 import { useState } from "react";
-
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Navbar10 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    console.log(isOpen);
-    setIsOpen(!isOpen);
+  const navItems = [
+    { id: 1, text: "Home" },
+    { id: 2, text: "Company" },
+    { id: 3, text: "Resources" },
+    { id: 4, text: "About" },
+    { id: 5, text: "Contact" },
+  ];
+  const [nav, setNav] = useState(false);
+
+  // Toggle function to handle the navbar's display
+  const handleNav = () => {
+    setNav(!nav);
   };
   return (
     <>
-      <CodeBox>
-        <nav className=" text-white">
-          <div className="  px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              {/* Logo */}
-              <div className="flex-shrink-0">
-                <a href="#!" className="text-2xl font-bold">
-                  <img alt="logo" src="/logo.png" className="h-8 w-8" />
-                </a>
-              </div>
+      <CodeBox
+        text={"Responsive Navbar"}
+        stringCode={`import { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+ const Navbar = ()=> {
+     const navItems = [
+    { id: 1, text: "Home" },
+    { id: 2, text: "Company" },
+    { id: 3, text: "Resources" },
+    { id: 4, text: "About" },
+    { id: 5, text: "Contact" },
+  ];
+  const [nav, setNav] = useState(false);
 
-              {/* Desktop Menu */}
-              <div className="hidden md:flex  space-x-8 bg-slate-800">
-                <a href="#!" className="hover:text-gray-300">
-                  Home
-                </a>
-                <a href="#!" className="hover:text-gray-300">
-                  About
-                </a>
-                <a href="#!" className="hover:text-gray-300">
-                  Services
-                </a>
-                <a href="#!  aaa" className="hover:text-gray-300">
-                  Contact
-                </a>
-              </div>
+  // Toggle function to handle the navbar's display
+  const handleNav = () => {
+    setNav(!nav);
+  };
+        return (
+            <div className="backdrop-blur-xl bg-white/20 rounded flex justify-between items-center py-6  max-w-[1240px] mx-auto px-4 text-white">
+          {/* Logo */}
+          <h1 className="w-full text-3xl font-bold text-[#00df9a]">Soft UI</h1>
 
-              {/* Mobile Menu Button */}
-              <div className="md:hidden z-50">
-                <button
-                  onClick={toggleMenu}
-                  className="text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                >
-                  <svg
-                    className="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    {isOpen ? (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    ) : (
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    )}
-                  </svg>
-                </button>
-              </div>
-            </div>
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex">
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className="px-6 py-1 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+              >
+                {item.text}
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Navigation Icon */}
+          <div onClick={handleNav} className="block md:hidden">
+            {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
 
-          {/* Mobile Menu */}
-          <div
-            className={`md:hidden transition-transform duration-300  ease-in-out transform ${
-              isOpen
-                ? "translate-y-0 opacity-100"
-                : "-translate-y-full opacity-0 "
-            }`}
+          {/* Mobile Navigation Menu */}
+          <ul
+            className={
+              nav
+                ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+                : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
+            }
           >
-            <div className="space-y-2 px-4 py-4 bg-slate-800">
-              <a href="#!" className="block hover:text-gray-300">
-                Home
-              </a>
-              <a href="#!" className="block hover:text-gray-300">
-                About
-              </a>
-              <a href="#!" className="block hover:text-gray-300">
-                Services
-              </a>
-              <a href="#!" className="block hover:text-gray-300">
-                Contact
-              </a>
-            </div>
+            {/* Mobile Logo */}
+            <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
+              REACT.
+            </h1>
+
+            {/* Mobile Navigation Items */}
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+              >
+                {item.text}
+              </li>
+            ))}
+          </ul>
+        </div>
+        )
+    }
+
+`}
+      >
+        <div className="backdrop-blur-xl bg-white/20 rounded flex justify-between items-center py-6  max-w-[1240px] mx-auto px-4 text-white">
+          {/* Logo */}
+          <h1 className="w-full text-3xl font-bold text-[#00df9a]">Soft UI</h1>
+
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex">
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className="px-6 py-1 hover:bg-[#00df9a] rounded-xl m-2 cursor-pointer duration-300 hover:text-black"
+              >
+                {item.text}
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Navigation Icon */}
+          <div onClick={handleNav} className="block md:hidden">
+            {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
           </div>
-        </nav>
+
+          {/* Mobile Navigation Menu */}
+          <ul
+            className={
+              nav
+                ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+                : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
+            }
+          >
+            {/* Mobile Logo */}
+            <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
+              REACT.
+            </h1>
+
+            {/* Mobile Navigation Items */}
+            {navItems.map((item) => (
+              <li
+                key={item.id}
+                className="p-4 border-b rounded-xl hover:bg-[#00df9a] duration-300 hover:text-black cursor-pointer border-gray-600"
+              >
+                {item.text}
+              </li>
+            ))}
+          </ul>
+        </div>
       </CodeBox>
     </>
   );
