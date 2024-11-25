@@ -8,6 +8,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "images.unsplash.com", // Allowed domain
+        port: "", // Leave empty for default port
+        pathname: "/**", // Match all paths under the domain
+      },
+      {
+        protocol: "https",
         hostname: "i.ibb.co",
       },
       {
