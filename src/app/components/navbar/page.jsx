@@ -1,4 +1,5 @@
 import Navbar1 from "@/components/App/Navbar/Navbar1";
+import Navbar10 from "@/components/App/Navbar/Navbar10";
 import Navbar2 from "@/components/App/Navbar/Navbar2";
 import Navbar3 from "@/components/App/Navbar/Navbar3";
 import Navbar4 from "@/components/App/Navbar/Navbar4";
@@ -33,6 +34,7 @@ const Navbar = () => {
       <Navbar1 />
       {/* Between Nvbar */}
       <Navbar2 />
+      <Navbar10 />
       {/* Navbar With Buttons */}
       <Navbar3 />
       {/* Navbar Without Routes */}

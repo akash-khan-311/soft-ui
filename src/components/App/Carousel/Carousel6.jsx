@@ -1,5 +1,6 @@
 "use client";
 import CodeBox from "@/components/Shared/Codebox/CodeBox";
+import Image from "next/image";
 import { useState } from "react";
 
 const Carousel6 = () => {
@@ -49,7 +50,10 @@ const Carousel6 = () => {
               onMouseEnter={() => setActiveIndex(index)}
               onMouseLeave={() => setActiveIndex(null)}
             >
-              <img
+              <Image
+                height={500}
+                width={500}
+                unoptimized={false}
                 src={image.image}
                 alt={image.title}
                 className="w-full h-56 md:h-full object-cover rounded-lg transform transition-transform duration-500 hover:scale-110"
