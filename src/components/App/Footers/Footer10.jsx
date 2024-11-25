@@ -488,7 +488,7 @@ export default Footer;
                                 title="Submit"
                                 className="absolute right-0 w-max rounded-r-3xl bg-primary py-3 px-6 text-center transition"
                               >
-                                <span className="font-semibold text-gray-900">
+                                <span className="font-semibold text-white">
                                   {" "}
                                   Send{" "}
                                 </span>
