@@ -68,7 +68,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
           >
             {/* Mobile Logo */}
             <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-              REACT.
+              Soft UI
             </h1>
 
             {/* Mobile Navigation Items */}
@@ -87,7 +87,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 `}
       >
-        <div className="backdrop-blur-xl bg-white/20 rounded flex justify-between items-center py-6  max-w-[1240px] mx-auto px-4 text-white">
+        <div className="backdrop-blur-xl md:overflow-hidden bg-white/20 rounded flex justify-between items-center py-6  max-w-[1240px] mx-auto px-4 text-white">
           {/* Logo */}
           <h1 className="w-full text-3xl font-bold text-[#00df9a]">Soft UI</h1>
 
@@ -118,7 +118,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
           >
             {/* Mobile Logo */}
             <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">
-              REACT.
+              Soft UI
             </h1>
 
             {/* Mobile Navigation Items */}
