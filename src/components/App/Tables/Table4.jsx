@@ -115,7 +115,7 @@ const Table = () => {
         </thead>
 
         {/* :TABLE BODY */}
-        <tbody className="">
+        <tbody  >
           {tableData.map((user, index) => (
             <tr
               key={user.name}
@@ -210,7 +210,7 @@ export default Table
           </thead>
 
           {/* :TABLE BODY */}
-          <tbody className="">
+          <tbody>
             {tableData.map((user, index) => (
               <tr
                 key={user.name}

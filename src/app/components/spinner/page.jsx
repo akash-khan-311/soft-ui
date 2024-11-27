@@ -31,7 +31,7 @@ export const metadata = {
 
 const Spinner = () => {
   return (
-    <div className="">
+    <div>
       <Spinner1 />
       <Spinner2 />
       <Spinner3 />

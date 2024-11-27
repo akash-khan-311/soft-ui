@@ -27,7 +27,7 @@ const Navbar5 = () => {
                         onClick={() => setIsOpen(!isOpen)}
                         className="cursor-pointer  flex items-center gap-3 hover:text-orange-600"
                       >
-                        <span className="">Services</span>
+                        <span  >Services</span>
                         {isOpen ? (
                           <svg
                             width="15"
@@ -107,7 +107,7 @@ const Navbar5 = () => {
                   onClick={() => setIsOpen(!isOpen)}
                   className="cursor-pointer  flex items-center gap-3 hover:text-orange-600"
                 >
-                  <span className="">Services</span>
+                  <span>Services</span>
                   {isOpen ? (
                     <svg
                       width="15"

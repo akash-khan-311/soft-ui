@@ -81,7 +81,7 @@ export const products = [
 ];
 const RootPage = () => {
   return (
-    <div className="">
+    <div>
       <HeroParallax products={products} />
     </div>
   );
