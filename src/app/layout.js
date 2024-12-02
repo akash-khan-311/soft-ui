@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         {children}
-        <TawkToWidget />
+        {/* <TawkToWidget /> */}
       </body>
     </html>
   );
