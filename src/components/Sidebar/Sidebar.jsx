@@ -23,6 +23,7 @@ const componentsItems = [
   "Error ",
   "Form",
   "Footer",
+  "Hamburger",
   "Hero",
   "Input",
   "Navbar",

@@ -10,8 +10,8 @@ const Navbar8 = () => {
 const Navbar = ()=> {
     const [showMenu, setShowMenu] = useState(false);
     return (
-        <nav className="border-b bg-gray-400">
-          <div className="container relative max-w-screen-lg mx-auto flex justify-between h-14">
+    <nav className="border-b bg-gray-400">
+          <div className="container relative mx-auto flex justify-between h-14">
             {/* Brand */}
             <a
               href="#!"
@@ -60,47 +60,47 @@ const Navbar = ()=> {
                   showMenu && "py-1"
                 }\`}
               >
-                <a href="#!">Laravel</a>
+                <a href="#!">Home</a>
               </li>
               <li
                 className={\`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black \${
                   showMenu && "py-1"
                 }\`}
               >
-                <a href="#!">Livewire</a>
+                <a href="#!">JavaScript</a>
               </li>
               <li
                 className={\`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black \${
                   showMenu && "py-1"
                 }\`}
               >
-                <a href="#!">TailwindCSS</a>
+                <a href="#!">React JS</a>
               </li>
               <li
                 className={\`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black \${
                   showMenu && "py-1"
                 }\`}
               >
-                <a href="#!">Alpine JS</a>
+                <a href="#!">Next JS</a>
               </li>
               <li
                 className={\`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black \${
                   showMenu && "py-1"
                 }\`}
               >
-                <a href="#!">About</a>
+                <a href="#!">Tailwind CSS</a>
               </li>
             </ul>
           </div>
         </nav>
-    )
+  )
 }
-
-export default Navbar;
-`}
+        
+export default Navbar;`}
       >
+        {/* Preview code */}
         <nav className="border-b bg-gray-400">
-          <div className="container relative max-w-screen-lg mx-auto flex justify-between h-14">
+          <div className="container relative mx-auto flex justify-between h-14">
             {/* Brand */}
             <a
               href="#!"
@@ -149,35 +149,35 @@ export default Navbar;
                   showMenu && "py-1"
                 }`}
               >
-                <a href="#!">Laravel</a>
+                <a href="#!">Home</a>
               </li>
               <li
                 className={`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black ${
                   showMenu && "py-1"
                 }`}
               >
-                <a href="#!">Livewire</a>
+                <a href="#!">JavaScript</a>
               </li>
               <li
                 className={`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black ${
                   showMenu && "py-1"
                 }`}
               >
-                <a href="#!">TailwindCSS</a>
+                <a href="#!">React JS</a>
               </li>
               <li
                 className={`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black ${
                   showMenu && "py-1"
                 }`}
               >
-                <a href="#!">Alpine JS</a>
+                <a href="#!">Next JS</a>
               </li>
               <li
                 className={`px-3 cursor-pointer transition-all duration-300 hover:bg-purple-50 flex items-center hover:text-black ${
                   showMenu && "py-1"
                 }`}
               >
-                <a href="#!">About</a>
+                <a href="#!">Tailwind CSS</a>
               </li>
             </ul>
           </div>
@@ -186,4 +186,5 @@ export default Navbar;
     </>
   );
 };
+
 export default Navbar8;

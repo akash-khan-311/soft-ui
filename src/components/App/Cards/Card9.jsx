@@ -2,7 +2,7 @@ import CodeBox from "@/components/Shared/Codebox/CodeBox";
 
 const Card9 = () => {
   return (
-    <div className="">
+    <div>
       <CodeBox
         stringCode={` <div className="w-80 mx-auto bg-white shadow rounded">
   <div className="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center" style={{backgroundImage: 'url("https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'}}>

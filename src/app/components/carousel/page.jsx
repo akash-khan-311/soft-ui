@@ -3,6 +3,7 @@ import Carousel1 from "@/components/App/Carousel/Carousel1";
 import Carousel2 from "@/components/App/Carousel/Carousel2";
 import Carousel4 from "@/components/App/Carousel/Carousel4";
 import Carousel5 from "@/components/App/Carousel/Carousel5";
+import Carousel6 from "@/components/App/Carousel/Carousel6";
 
 export const metadata = {
   title: "Carousel | Soft UI",
@@ -31,6 +32,7 @@ const Carousel = () => {
       <Carousel3 />
       <Carousel4 />
       <Carousel5 />
+      <Carousel6 />
     </div>
   );
 };

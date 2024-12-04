@@ -24,7 +24,7 @@ export const metadata = {
 
 const Pagination = () => {
   return (
-    <div className="">
+    <div>
       <Pagination1 />
       <Paginatin2 />
       <Pagination3 />

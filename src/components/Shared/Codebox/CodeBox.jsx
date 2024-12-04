@@ -58,7 +58,7 @@ const CodeBox = ({ children, stringCode, text }) => {
             <div className="flex items-center">
               <div className="flex ">
                 {isCodeBoxOpen ? (
-                  <div className="">
+                  <div>
                     <button
                       onClick={() => setIsCodeBoxOpen(!isCodeBoxOpen)}
                       className="flex items-center border py-1 px-3 rounded-md transition-all duration-300 hover:bg-white/20"

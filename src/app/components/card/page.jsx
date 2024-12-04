@@ -6,6 +6,7 @@ import Card13 from "@/components/App/Cards/Card13";
 import Card14 from "@/components/App/Cards/Card14";
 import Card15 from "@/components/App/Cards/Card15";
 import Card16 from "@/components/App/Cards/Card16";
+import Card17 from "@/components/App/Cards/Card17";
 
 import Card2 from "@/components/App/Cards/Card2";
 import Card3 from "@/components/App/Cards/Card3";
@@ -66,6 +67,7 @@ const Card = () => {
       <Card13 />
       <Card14 />
       <Card15 />
+      <Card17 />
     </div>
   );
 };

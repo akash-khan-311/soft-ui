@@ -63,7 +63,7 @@ return (
                     <ul className="inline-grid gap-y-8 grid-cols-2">
                         {
                             stats.map((item, idx) => (
-                                <li key={idx} className="">
+                                <li key={idx}  >
                                 <h4 className="text-xl md:text-2xl lg:text-3xl text-yellow-500 font-semibold">
                                 {item.data}
                                 </h4>
@@ -103,7 +103,7 @@ return (
               <div className="flex-none mt-6 md:mt-0 lg:mt-6">
                 <ul className="inline-grid gap-y-8 grid-cols-2">
                   {stats.map((item, idx) => (
-                    <li key={idx} className="">
+                    <li key={idx}>
                       <h4 className="text-xl md:text-2xl lg:text-3xl text-yellow-500 font-semibold">
                         {item.data}
                       </h4>

@@ -11,6 +11,7 @@ import Button18 from "@/components/App/Buttons/Button18";
 import Button19 from "@/components/App/Buttons/Button19";
 import Button2 from "@/components/App/Buttons/Button2";
 import Button20 from "@/components/App/Buttons/Button20";
+import Button21 from "@/components/App/Buttons/Button21";
 import Button3 from "@/components/App/Buttons/Button3";
 import Button4 from "@/components/App/Buttons/Button4";
 import Button5 from "@/components/App/Buttons/Button5";
@@ -60,6 +61,7 @@ const Button = () => {
       <Button17 />
       <Button18 />
       <Button19 />
+      <Button21 />
     </div>
   );
 };

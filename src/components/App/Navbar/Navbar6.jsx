@@ -38,47 +38,34 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="absolute right-8 top-6 cursor-pointer md:hidden"
         >
-          {isOpen ? (
-            <svg
-              width="35"
-              height="35"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
-                fill="#0F0F0F"
-              />
-            </svg>
-          ) : (
-            <svg
-              width="35"
-              height="35"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 18L20 18"
-                stroke="#000000"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M4 12L20 12"
-                stroke="#000000"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M4 6L20 6"
-                stroke="#000000"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          )}
+           {!isOpen ? (
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 6.5H19V8H5V6.5Z" fill="#1F2328" />
+                  <path d="M5 16.5H19V18H5V16.5Z" fill="#1F2328" />
+                  <path d="M5 11.5H19V13H5V11.5Z" fill="#1F2328" />
+                </svg>
+              ) : (
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 10.9394L16.9697 5.96961L18.0304 7.03027L13.0606 12L18.0303 16.9697L16.9697 18.0304L12 13.0607L7.03045 18.0302L5.96979 16.9696L10.9393 12L5.96973 7.03042L7.03039 5.96976L12 10.9394Z"
+                    fill="#1F2328"
+                  />
+                </svg>
+              )}
         </div>
         <ul
           className={\`md:flex md:items-center md:pb-0 md:pt-0 pt-4 pb-10 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in \${isOpen ? " md:translate-y-0 translate-y-3 opacity-100" : " -translate-y-full  md:translate-y-0"} md:opacity-100 opacity-0\`}
@@ -102,61 +89,49 @@ const Navbar = () => {
 
 export default Navbar;`}
       >
-        <div className="shadow-md w-full">
+        <div className="shadow-md w-full relative ">
           <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
             <div className="cursor-pointer">
               <span className="text-4xl font-bold text-gray-800">
                 Soft <span className="text-orange-600">UI</span>
               </span>
             </div>
+
             <div
               onClick={() => setIsOpen(!isOpen)}
-              className="absolute right-8 top-6 cursor-pointer md:hidden"
+              className="absolute right-8 top-4 cursor-pointer md:hidden"
             >
-              {isOpen ? (
+              {!isOpen ? (
                 <svg
-                  width="35"
-                  height="35"
+                  width="40px"
+                  height="40px"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
-                    fill="#0F0F0F"
-                  />
+                  <path d="M5 6.5H19V8H5V6.5Z" fill="#1F2328" />
+                  <path d="M5 16.5H19V18H5V16.5Z" fill="#1F2328" />
+                  <path d="M5 11.5H19V13H5V11.5Z" fill="#1F2328" />
                 </svg>
               ) : (
                 <svg
-                  width="35"
-                  height="35"
+                  width="40px"
+                  height="40px"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M4 18L20 18"
-                    stroke="#000000"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M4 12L20 12"
-                    stroke="#000000"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M4 6L20 6"
-                    stroke="#000000"
-                    strokeWidth="2"
-                    strokeLinecap="round"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 10.9394L16.9697 5.96961L18.0304 7.03027L13.0606 12L18.0303 16.9697L16.9697 18.0304L12 13.0607L7.03045 18.0302L5.96979 16.9696L10.9393 12L5.96973 7.03042L7.03039 5.96976L12 10.9394Z"
+                    fill="#1F2328"
                   />
                 </svg>
               )}
             </div>
             <ul
-              className={`md:flex md:items-center md:pb-0 md:pt-0 pt-4 pb-10 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+              className={`md:flex md:items-center md:pb-0 md:pt-0 pt-4 pb-10 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in overflow-hidden ${
                 isOpen
                   ? " md:translate-y-0 translate-y-3 opacity-100"
                   : " -translate-y-full  md:translate-y-0"
