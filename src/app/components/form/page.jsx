@@ -6,6 +6,7 @@ import Form12 from "@/components/App/Forms/Form12";
 import Form13 from "@/components/App/Forms/Form13";
 import Form14 from "@/components/App/Forms/Form14";
 import Form15 from "@/components/App/Forms/Form15";
+import Form16 from "@/components/App/Forms/Form16";
 
 import Form2 from "@/components/App/Forms/Form2";
 import Form3 from "@/components/App/Forms/Form3";
@@ -63,6 +64,7 @@ const Form = () => {
       <Form11 />
       <Form14 />
       <Form15 />
+      <Form16 />
     </div>
   );
 };
