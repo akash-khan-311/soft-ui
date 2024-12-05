@@ -1,6 +1,7 @@
 import Footer1 from "@/components/App/Footers/Footer1";
 import Footer10 from "@/components/App/Footers/Footer10";
 import Footer11 from "@/components/App/Footers/Footer11";
+import Footer12 from "@/components/App/Footers/Footer12";
 import Footer2 from "@/components/App/Footers/Footer2";
 import Footer3 from "@/components/App/Footers/Footer3";
 import Footer4 from "@/components/App/Footers/Footer4";
@@ -49,6 +50,7 @@ const Footer = () => {
       <Footer9 />
       <Footer10 />
       <Footer11 />
+      <Footer12 />
     </div>
   );
 };
