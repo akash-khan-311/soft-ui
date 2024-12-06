@@ -8,6 +8,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "https://styde.net",
+      },
+      {
+        protocol: "https",
         hostname: "images.unsplash.com", // Allowed domain
         port: "", // Leave empty for default port
         pathname: "/**", // Match all paths under the domain
@@ -15,6 +19,18 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "i.ibb.co",
+      },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+      },
+      {
+        protocol: "https",
+        hostname: "static-00.iconduck.com",
+      },
+      {
+        protocol: "https",
+        hostname: "styde.net",
       },
       {
         protocol: "https",
