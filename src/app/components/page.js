@@ -6,7 +6,7 @@ const ComponentsPage = () => {
           <div className=" max-w-5xl mx-auto">
             <h1 className=" lg:text-6xl md:text-4xl text-3xl font-bold logo-text">
               Embark on a Journey of Design Excellence with
-              <span className=""> Soft UI</span> For Coding 20x Faster
+              <span > Soft UI</span> For Coding 20x Faster
             </h1>
             <p className="lg:text-xl md:text-base text-sm">
               Welcome to <span className="logo-text">Soft UI,</span> where
