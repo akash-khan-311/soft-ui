@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Hero1 from "@/components/App/Hero/Hero1";
+import Hero10 from "@/components/App/Hero/Hero10";
 
 import { Hero2 } from "@/components/App/Hero/Hero2";
 import { Hero3 } from "@/components/App/Hero/Hero3";
@@ -36,6 +37,7 @@ const Hero = () => {
       </h1>
 
       <Hero9 />
+      <Hero10 />
 
       <Hero8 />
       <Hero1 />

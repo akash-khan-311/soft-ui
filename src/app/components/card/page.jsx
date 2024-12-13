@@ -7,6 +7,7 @@ import Card14 from "@/components/App/Cards/Card14";
 import Card15 from "@/components/App/Cards/Card15";
 import Card16 from "@/components/App/Cards/Card16";
 import Card17 from "@/components/App/Cards/Card17";
+import Card18 from "@/components/App/Cards/Card18";
 
 import Card2 from "@/components/App/Cards/Card2";
 import Card3 from "@/components/App/Cards/Card3";
@@ -59,6 +60,7 @@ const Card = () => {
       {/* Product Card */}
       <Card16 />
       <Card10 />
+      <Card18 />
       {/* Profile Card */}
       <Card11 />
       {/* Profile Card With cover Image */}
