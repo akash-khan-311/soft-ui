@@ -3,6 +3,7 @@ import Alert2 from "@/components/App/Alerts/Alert2";
 import Alert3 from "@/components/App/Alerts/Alert3";
 import Alert4 from "@/components/App/Alerts/Alert4";
 import Alert5 from "@/components/App/Alerts/Alert5";
+
 export const metadata = {
   title: "Alert | Soft UI",
   description:
